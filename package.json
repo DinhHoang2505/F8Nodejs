@@ -1,0 +1,26 @@
+{
+  "name": "f8nodejs",
+  "version": "1.0.0",
+  "description": "learn nodejs with f8",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinhHoang2505/F8Nodejs.git"
+  },
+  "author": "HoangDV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DinhHoang2505/F8Nodejs/issues"
+  },
+  "homepage": "https://github.com/DinhHoang2505/F8Nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
