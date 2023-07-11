@@ -1,0 +1,64 @@
+Arguments: 
+  C:\Users\dinhv\AppData\Roaming\nvm\v16.16.0\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add pinst --dev
+
+PATH: 
+  C:\Users\dinhv\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dinhv\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\dotnet;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;%NVM_HOME%;%NVM_SYMLINK%;D:\Programs\Ruby31-x64\bin;C:\Users\dinhv\AppData\Local\Microsoft\WindowsApps;C:\Users\dinhv\AppData\Local\Yarn\bin;C:\Users\dinhv\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dinhv\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\MyProject\F8Nodejs\node_modules\node-sass\vendor\win32-x64-93\binding.node'
+
+npm manifest: 
+  {
+    "name": "f8nodejs",
+    "version": "1.0.0",
+    "description": "learn nodejs with f8",
+    "main": "src/app.js",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon --inspect src/app.js",
+      "watch": "node-sass --watch src/resources/scss -o src/public/css",
+      "beautiful": "lint-staged",
+      "prepare": "husky install",
+      "postinstall": "husky install"
+    },
+    "lint-staged": {
+      "src/**/*.{js,json,scss,css}": "prettier --write --single-quote --trailing-comma all"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DinhHoang2505/F8Nodejs.git"
+    },
+    "author": "HoangDV",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/DinhHoang2505/F8Nodejs/issues"
+    },
+    "homepage": "https://github.com/DinhHoang2505/F8Nodejs#readme",
+    "dependencies": {
+      "express": "^4.18.2",
+      "express-handlebars": "^7.0.7"
+    },
+    "devDependencies": {
+      "lint-staged": "^13.2.3",
+      "morgan": "^1.10.0",
+      "node-sass": "^9.0.0",
+      "nodemon": "^2.0.22",
+      "prettier": "^3.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
